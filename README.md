@@ -22,16 +22,20 @@ To install the dependencies, run:
 - Fedora example:
 
 ```
-sudo dnf -y install genisoimage virt-install libguestfs-tools-c qemu-img libvirt-client wget libosinfo
+sudo dnf -y install \
+    genisoimage virt-install libguestfs-tools-c qemu-img \
+    libvirt-client wget libosinfo
 ```
 
 - Ubuntu example:
 
 ```
-sudo apt install -y genisoimage virtinst libguestfs-tools qemu-utils libvirt-clients wget libosinfo-bin
+sudo apt install -y genisoimage virtinst libguestfs-tools \
+    qemu-utils libvirt-clients wget libosinfo-bin
 ```
 
-If you want to resolve guests by their hostnames, install the `libvirt-nss` package:
+If you want to resolve guests by their hostnames,
+install the `libvirt-nss` package:
 
 - Fedora example:
 
